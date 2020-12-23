@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+
+</head>
+<body>
+    
+<div class="container-1">
+  <div class="heading">
+    <h1>What client say?</h1>
+  </div>
+  <div class="desc">
+    Some text hereSome text hereSome text hereSome text hereSome text hereSome text hereSome text hereSome text here.
+  </div>
+</div>
+
+<div class="main-frame">
+
+</div>
+
+<script>
+
+    let data = [
+        {image: 'https://qph.fs.quoracdn.net/main-thumb-920446374-200-nqsdyactrbmrkrxavjiplavyjsfpcgvn.jpeg',name: 'Pawan Deore',handle: '@pavandeore',text: 'This is some text about meThis is some text about meThis is some text about me.'},
+        {image: 'https://qph.fs.quoracdn.net/main-thumb-920446374-200-nqsdyactrbmrkrxavjiplavyjsfpcgvn.jpeg',name: 'Shubham Awale',handle: '@pavandeore',text: 'This is some text about meThis is some text about meThis is some text about me.'},
+        {image: 'https://qph.fs.quoracdn.net/main-thumb-920446374-200-nqsdyactrbmrkrxavjiplavyjsfpcgvn.jpeg',name: 'Akash limkar',handle: '@pavandeore',text: 'This is some text about meThis is some text about meThis is some text about me.'},
+        {image: 'https://qph.fs.quoracdn.net/main-thumb-920446374-200-nqsdyactrbmrkrxavjiplavyjsfpcgvn.jpeg',name: 'Shabhu bhuosale',handle: '@pavandeore',text: 'This is some text about meThis is some text about meThis is some text about me.'},
+        {image: 'https://qph.fs.quoracdn.net/main-thumb-920446374-200-nqsdyactrbmrkrxavjiplavyjsfpcgvn.jpeg',name: 'Pawan Deore',handle: '@pavandeore',text: 'This is some text about meThis is some text about meThis is some text about me.'},
+        {image: 'https://qph.fs.quoracdn.net/main-thumb-920446374-200-nqsdyactrbmrkrxavjiplavyjsfpcgvn.jpeg',name: 'Pawan Deore',handle: '@pavandeore',text: 'This is some text about meThis is some text about meThis is some text about me.'},
+        {image: 'https://qph.fs.quoracdn.net/main-thumb-920446374-200-nqsdyactrbmrkrxavjiplavyjsfpcgvn.jpeg',name: 'Shubham Awale',handle: '@pavandeore',text: 'This is some text about meThis is some text about meThis is some text about me.'},
+        {image: 'https://qph.fs.quoracdn.net/main-thumb-920446374-200-nqsdyactrbmrkrxavjiplavyjsfpcgvn.jpeg',name: 'Akash limkar',handle: '@pavandeore',text: 'This is some text about meThis is some text about meThis is some text about me.'},
+        {image: 'https://qph.fs.quoracdn.net/main-thumb-920446374-200-nqsdyactrbmrkrxavjiplavyjsfpcgvn.jpeg',name: 'Shabhu bhuosale',handle: '@pavandeore',text: 'This is some text about meThis is some text about meThis is some text about me.'},
+        {image: 'https://qph.fs.quoracdn.net/main-thumb-920446374-200-nqsdyactrbmrkrxavjiplavyjsfpcgvn.jpeg',name: 'Pawan Deore',handle: '@pavandeore',text: 'This is some text about meThis is some text about meThis is some text about me.'}
+    ]
+
+    let divMain = document.querySelector('.main-frame');
+
+    
+
+    data.forEach((e)=>{
+        let div = document.createElement('div');
+
+        div.innerHTML = `
+        <div class="middle-line-section">
+        <div class="inner-green">
+            <div class="green"></div><br/>
+            <div class="green"></div> 
+        </div>
+        <div class="inner-gray">
+            <div class="gray-line"></div>
+        </div>
+        </div>
+        <div class="portfolio">
+        <div class="img-section">
+            <img src="https://qph.fs.quoracdn.net/main-thumb-920446374-200-nqsdyactrbmrkrxavjiplavyjsfpcgvn.jpeg"/>
+            <div>
+            <div class="name">${e.name}</div>
+            <div class="handle">${e.handle}</div>
+            </div>
+        </div>
+        <div class="text-section">
+            this is some text this is some text aobut me. this is some text this is some text aobut me.
+        </div>
+        </div>
+        `;
+
+        divMain.appendChild(div);
+    })
+
+</script>
+
+</body>
+</html>
+  
+  
+  
+  

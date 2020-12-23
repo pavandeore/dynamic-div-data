@@ -1,0 +1,135 @@
+*{
+    font-family:arial;
+  }
+  
+  .container-1{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+  }
+  .desc{
+    text-align:center;
+    width:70vw;
+    opacity:0.6;
+  }
+  
+  .main-frame{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content:center;
+  }
+  
+  .img-section{
+    display: flex;
+  }
+  .img-section > div{
+    margin-left:25px;
+    margin-top:20px;
+  }
+  .img-section > div > div{
+    margin:3px auto;
+  }
+  .name{
+    text-transform:uppercase;
+  }
+  .handle{
+    opacity:0.5;
+  }
+  
+  .img-section > img{
+    height:80px;
+    border-radius:50%;
+  }
+  
+  .middle-line-section{
+    display:flex;
+  }
+  .middle-line-section > .inner-green{
+    display:flex;
+  }
+  .middle-line-section > .inner-green > div{
+    margin-left:6px;
+  }
+  .middle-line-section > div{
+    margin:6px;
+  }
+  .green{
+    width:5px;
+    height:18px;
+    background:green;
+    transform:rotate(19deg);
+    border-top-left-radius: 100px;
+    border-top-right-radius: 50px;
+  }
+  
+  .gray-line{
+    margin-top:12px;
+    background:lightgray;
+    height:6px;
+    width:200px;
+  }
+  
+  .portfolio{
+    margin-top:15px;
+  }
+  .text-section{
+    margin-top:15px;
+  }
+
+  .main-frame, .container-1{
+      margin-top: 30px;
+  }
+  
+  .heading{
+      text-transform: uppercase;
+  }
+
+  @media (min-width:950px){
+    .main-frame > div{
+      width:20%;
+      padding:10px;
+      margin:10px;
+    }  
+    .desc{
+        text-align:center;
+        width:35vw;
+    }
+  }
+  
+  @media (max-width:950px){
+    .main-frame > div{
+      width:37%;
+      padding:10px;
+      margin:10px;
+    }
+    .desc{
+        text-align:center;
+        width:45vw;
+    }
+  }
+  @media (max-width:500px){
+    .main-frame > div{
+      width:60%;
+      margin:10px;
+    }
+    .desc{
+        text-align:center;
+        width:65vw;
+    }
+  }
+  
+  
+  
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
